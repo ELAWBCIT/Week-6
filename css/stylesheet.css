@@ -2,11 +2,35 @@ div h2 {
     font-style:italic;
 }
 
+/* Can also use div > h2 or .container h2 */
+
 h2 + p{
     color: red;
 }
 
 .list > li{
-    list-style-type:none;
+    list-style-type:none; 
     border-bottom: 1px solid grey;
+}
+/* list-style-type gets rid of the bullets */
+
+li a:link {
+    color: green;
+}
+
+li a:visited{
+    color: red;
+}
+
+li a:hover{
+    color:pink;
+}
+
+li:first-child::first-letter{
+    font-weight: bold;
+    font-size: 120%
+}
+
+a[title="BCIT homepage"] {
+    background-color: yellow;
 }
